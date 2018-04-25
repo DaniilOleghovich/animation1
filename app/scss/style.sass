@@ -2,6 +2,44 @@ body
   margin: 0
   padding: 0
 
+  .container
+    margin: 0 auto
+    text-align: center
+    position: relative
+    top: 50vh
+    transform: translateY(-50%)
+
+  .spinner
+    display: inline-block
+    width: 300px
+    height: 300px
+    background: url('http://i.imgur.com/oSHLAzp.png') center center
+    background-size: contain
+    transform-origin: 50% 50%
+    animation: spinner 5s infinite alternate ease-in-out
+
+  .center-spinner
+    display: inline-block
+    position: absolute
+    margin-left: -300px
+    width: 300px
+    height: 300px
+    background: url('http://i.imgur.com/u0BC2ZR.png') center center
+    background-size: contain
+    content: ''
+
+  .text
+    position: relative
+    z-index: 1
+    font-size: 35px
+
+  @keyframes spinner
+    100%
+      transform: rotate(3600deg)
+
+
+
+
   .earth
     position: relative
     width: 300px
